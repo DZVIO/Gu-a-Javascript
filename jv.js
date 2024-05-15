@@ -17,12 +17,13 @@ window.onload = function () {
             return false;
         }
 
-        //validar correo
-        var mailinput = document.getElementById("mail");
-        if (mailinput.value.trim() === "") {
-            alert("Digite su mail");
-            return false;
-        }
+       //validacion de gmail
+       var emailInput = document.getElementById("email");
+       var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       if (!emailPattern.test(emailInput.value.trim())) {
+           alert("Digite un email válido");
+           return false;
+       }
 
         //validar placa
         var placainput = document.getElementById("placa");
