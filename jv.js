@@ -1,6 +1,6 @@
-window.onload = function(){
+window.onload = function () {
     var form = document.getElementById("form");
-    form.onsubmit = function(event){
+    form.onsubmit = function (event) {
         event.preventDefault();
 
         //validar nombre
@@ -45,7 +45,7 @@ window.onload = function(){
             return false;
         }
 
-        alert("Tu auto fue registrado correctamente")
+        alert("Vehículo registrado correctamente")
         document.getElementById("form").reset();
         return true;
     }
